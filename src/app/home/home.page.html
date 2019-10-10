@@ -67,7 +67,8 @@ and is wrapped around the whole page content, except for the footer in this exam
               leadership, management, team work, besides the technical skills for sure.
               After a good study for the CVs 5 students, 1 mentor, and 1 team manager were chosen, according to their
               excellent records.</p>
-            <p class="w3-right"><button class="w3-button w3-black"><b>READ MORE</b></button></p>
+            <p class="w3-right"><a [routerLink]="['/story']" routerLinkActive="router-link-active"><button
+                  class="w3-button w3-black"><b>READ MORE</b></button></a></p>
             <p class="w3-clear"></p>
           </div>
         </div>
@@ -124,49 +125,49 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
         <hr>
 
-        <!-- Posts -->
-        <div class="w3-white w3-margin">
+        <!-- Team -->
+        <div class="w3-white w3-margin team">
           <div class="w3-container w3-padding w3-black">
             <h4>TEAM</h4>
           </div>
           <ul class="w3-ul w3-hoverable w3-white">
-            <li class="w3-padding-16">
+            <li class="w3-padding-16" (click)="team(1)">
               <img src="assets/team/Noha.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
               <span class="w3-large">Noha Ahmed</span>
               <br>
               <span>Team Manager</span>
             </li>
-            <li class="w3-padding-16">
+            <li class="w3-padding-16" (click)="team(2)">
               <img src="assets/team/Ahmed.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
               <span class="w3-large">Ahmed Abdelwadod</span>
               <br>
               <span>Team Mentor</span>
             </li>
-            <li class="w3-padding-16">
+            <li class="w3-padding-16" (click)="team(3)">
               <img src="assets/team/Omer.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large">Omer Haider</span>
+              <span class="w3-large">Omer Hayder</span>
               <br>
               <span>Team Captain</span>
             </li>
-            <li class="w3-padding-16">
+            <li class="w3-padding-16" (click)="team(4)">
               <img src="assets/team/Sara.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large">Sara Elmusbah</span>
+              <span class="w3-large">Sara Almusbah</span>
               <br>
               <span>Team Spokesperson</span>
             </li>
-            <li class="w3-padding-16">
+            <li class="w3-padding-16" (click)="team(5)">
               <img src="assets/team/Dania.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
               <span class="w3-large">Dania Rida</span>
               <br>
               <span>Designer</span>
             </li>
-            <li class="w3-padding-16">
+            <li class="w3-padding-16" (click)="team(6)">
               <img src="assets/team/Momen.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
               <span class="w3-large">Momen Abdelwadoud</span>
               <br>
               <span>Programmer</span>
             </li>
-            <li class="w3-padding-16">
+            <li class="w3-padding-16" (click)="team(7)">
               <img src="assets/team/Elaf.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
               <span class="w3-large">Elaf Shameseldin</span>
               <br>
@@ -181,9 +182,12 @@ and is wrapped around the whole page content, except for the footer in this exam
             <h4>FOLLOW US</h4>
           </div>
           <div class="w3-container w3-xlarge w3-padding">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <a href="https://facebook.com/SudanFGC" class="w3-bar-item w3-button"><i
+                class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/teamsudan_fgc/" class="w3-bar-item w3-button"><i
+                class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/FgcSudan" class="w3-bar-item w3-button"><i
+                class="fa fa-twitter w3-hover-opacity"></i></a>
           </div>
         </div>
         <hr>
@@ -199,9 +203,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 
   <!-- Footer -->
   <footer class="w3-container w3-dark-grey" style="padding:32px">
-    <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i
-        class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <p class="w3-center">Hosted with <i class="fa fa-heart"></i> on <a target="_blank" href="github.com">Github.com</a>
+    </p>
+    <p class="w3-center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </footer>
 
 </ion-content>

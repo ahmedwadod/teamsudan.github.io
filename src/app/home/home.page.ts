@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public navCtrl: NavController, public data: DataService) {}
 
+  team(no: number){
+    this.data.currentMember = no;
+    this.navCtrl.navigateForward("/team-member");
+  }
 }

@@ -1,5 +1,12 @@
 h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
 ion-content {font-family: "Open Sans"}
+.fa{
+    cursor: pointer;
+}
 .w3-padding .fa{
+    font-size: 1.2em;
     margin-right: 10px;
+}
+.team li{
+    cursor: pointer;
 }
